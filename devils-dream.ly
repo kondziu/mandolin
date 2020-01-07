@@ -1,14 +1,14 @@
 DevilsDreamKey = "A major"
 
-DevilsDreamChordsA = \chordmode          { r1 | a  | r | b:m | r | a | r | b:m | d2 a | d2 a }
+DevilsDreamChordsA = \chordmode          { r4 | a1 | r | b:m | r | a | r | b:m | d2 a | d2 a }
 DevilsDreamChordsB = \chordmode          {    | a1 | r | b:m | r | a | r | b:m | d2 a | d2 a }
-DevilsDreamChordDictionaryA = \chordmode { r1 | a  | r | b:m | r | r | r | r   | r    | r    }
+DevilsDreamChordDictionaryA = \chordmode { r4 | a1 | r | b:m | r | r | r | r   | r    | r    }
 DevilsDreamChordDictionaryB = \chordmode {    | a1 | r | b:m | r | r | r | r   | r    | r    }
 
 DevilsDreamNotesA = {
   \key a \major
 
-      r2.                                             e''8    gis''   | 
+      \partial 4                                      e''8    gis''   | 
 
   \repeat volta 2 {
 

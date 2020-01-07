@@ -1,14 +1,14 @@
 LibertyKey = "D major"
 
-LibertyChordsA = \chordmode          { r1 | d  | r | g | r | d | r | a | d | d }
+LibertyChordsA = \chordmode          { r4 | d1 | r | g | r | d | r | a | d | d }
 LibertyChordsB = \chordmode          {    | d1 | r | r | a | d | r | a | d | d }
-LibertyChordDictionaryA = \chordmode { r1 | d  | r | g | r | r | r | a | r | r }
+LibertyChordDictionaryA = \chordmode { r4 | d1 | r | g | r | r | r | a | r | r }
 LibertyChordDictionaryB = \chordmode {    | d1 | r | r | a | r | r | r | r | r }
 
 LibertyNotesA = {
   \key d \major
 
-      r2.                                             a''8    g''     | 
+      \partial 4                                      a''8    g''     | 
 
   \repeat volta 2 {
 

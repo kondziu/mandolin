@@ -1,13 +1,13 @@
 BlackberryBlossomKey = "G major"
 
-BlackberryBlossomChordsA = \chordmode          { r1 | g2 d | c g | c g | a:7 d | g d | c g | c g  | d g | d g }
+BlackberryBlossomChordsA = \chordmode          { r4 | g2 d | c g | c g | a:7 d | g d | c g | c g  | d g | d g }
 BlackberryBlossomChordsB = \chordmode          {    | e1:m | r   | r   | b:7    | e:m  | r | c2 g | d g | d g }
-BlackberryBlossomChordDictionaryA = \chordmode { r1 | g2 d | c r | r1  | a2:7 r | r1 | r   | r    | r   | r   }
+BlackberryBlossomChordDictionaryA = \chordmode { r4 | g2 d | c r | r1  | a2:7 r | r1 | r   | r    | r   | r   }
 BlackberryBlossomChordDictionaryB = \chordmode {    | e1:m | r   | r   | b:7    | r  | r   | c2 g | d r | r1  }
 
 BlackberryBlossomNotesA = {
   \key g \major
-      r2.                                             e''8    fis''   | 
+      \partial 4                                      e''8    fis''   | 
 
   \repeat volta 2 {
 
