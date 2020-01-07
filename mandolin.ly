@@ -2,6 +2,7 @@
 
 \include "liberty.ly"
 \include "blackberry-blossom.ly"
+\include "devils-dream.ly"
 
 #(set-default-paper-size "a5" 'landscape)
 
@@ -43,6 +44,7 @@ system-system-spacing =
     \score {
       \header {
         piece = "Part A"
+        opus = \LibertyKey
       }
       <<
         \new FretBoards {
@@ -95,6 +97,7 @@ system-system-spacing =
     \score {
       \header {
         piece = "Part A"
+        opus = \BlackberryBlossomKey
       }
       <<
         \new FretBoards {
@@ -136,6 +139,62 @@ system-system-spacing =
         \new TabStaff {
             \set Staff.stringTunings = #mandolin-tuning
             \BlackberryBlossomNotesB
+        }
+      >>
+    
+  
+    } % score
+  } % book part
+
+  \bookpart {
+    \header {
+      title = "Devil's Dream"
+    } 
+    \score {
+      \header {
+        piece = "Part A"
+        opus = \DevilsDreamKey
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \DevilsDreamChordDictionaryA
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \DevilsDreamChordsA
+        }
+        \new Staff {
+            \clef treble
+            \DevilsDreamNotesA
+        }
+        \new TabStaff {
+            \set Staff.stringTunings = #mandolin-tuning
+            \DevilsDreamNotesA
+        }
+      >>
+    } % score
+    
+    \score {
+      \header {
+        piece = "Part B"
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \DevilsDreamChordDictionaryB
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \DevilsDreamChordsB
+        }
+        \new Staff {
+            \clef treble
+            \DevilsDreamNotesB
+        }
+        \new TabStaff {
+            \set Staff.stringTunings = #mandolin-tuning
+            \DevilsDreamNotesB
         }
       >>
     

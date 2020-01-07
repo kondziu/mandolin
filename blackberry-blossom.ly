@@ -1,3 +1,5 @@
+BlackberryBlossomKey = "G major"
+
 BlackberryBlossomChordsA = \chordmode          { r1 | g2 d | c g | c g | a:7 d | g d | c g | c g  | d g | d g }
 BlackberryBlossomChordsB = \chordmode          {    | e1:m | r   | r   | b:7    | e:m  | r | c2 g | d g | d g }
 BlackberryBlossomChordDictionaryA = \chordmode { r1 | g2 d | c r | r1  | a2:7 r | r1 | r   | r    | r   | r   }

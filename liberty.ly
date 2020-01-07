@@ -1,3 +1,5 @@
+LibertyKey = "D major"
+
 LibertyChordsA = \chordmode          { r1 | d  | r | g | r | d | r | a | d | d }
 LibertyChordsB = \chordmode          {    | d1 | r | r | a | d | r | a | d | d }
 LibertyChordDictionaryA = \chordmode { r1 | d  | r | g | r | r | r | a | r | r }
