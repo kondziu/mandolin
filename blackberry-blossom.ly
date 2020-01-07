@@ -31,7 +31,7 @@ BlackberryBlossomNotesB = {
   \repeat volta 2 {
 
       e'4             e''             d''             e''             |    
-      e'8     e''                     d''8    b'      a'      g'      | 
+      e'4             e''             d''8    b'      a'      g'      | 
       e'4             e''             d''             e''8    fis''   |    
       g''8    fis''   g''     a''     g''     fis''   e''     d''     |
 
