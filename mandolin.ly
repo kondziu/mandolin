@@ -3,6 +3,9 @@
 \include "liberty.ly"
 \include "blackberry-blossom.ly"
 \include "devils-dream.ly"
+\include "soldiers-joy.ly"
+\include "greensleeves.ly"
+
 
 #(set-default-paper-size "a5" 'landscape)
 
@@ -201,6 +204,113 @@ system-system-spacing =
   
     } % score
   } % book part
+
+  \bookpart {
+    \header {
+      title = "Soldier's Joy"
+    } 
+    \score {
+      \header {
+        piece = "Part A"
+        opus = \SoldiersJoyKey
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \SoldiersJoyChordDictionaryA
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \SoldiersJoyChordsA
+        }
+        \new Staff {
+          \clef treble
+          \SoldiersJoyNotesA
+        }
+        \new TabStaff {
+          \set Staff.stringTunings = #mandolin-tuning
+          \SoldiersJoyNotesA
+        }
+      >>
+    } % score
+    \score {
+      \header {
+        piece = "Part B"
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \SoldiersJoyChordDictionaryB
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \SoldiersJoyChordsB
+        }
+        \new Staff {
+          \clef treble
+          \SoldiersJoyNotesB
+        }
+        \new TabStaff {
+          \set Staff.stringTunings = #mandolin-tuning
+          \SoldiersJoyNotesB
+        }
+      >>
+    } % score
+  } % book part
+
+  \bookpart {
+    \header {
+      title = "Greensleeves"
+    } 
+    \score {
+      \header {
+        piece = ""
+        opus = \GreensleevesKey
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \GreensleevesChordDictionaryA
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \GreensleevesChordsA
+        }
+        \new Staff {
+          \clef treble
+          \GreensleevesNotesA
+        }
+        \new TabStaff {
+          \set Staff.stringTunings = #mandolin-tuning
+          \GreensleevesNotesA
+        }
+      >>
+    } % score
+    \score {
+      \header {
+        piece = "Cont'd"
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \GreensleevesChordDictionaryB
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \GreensleevesChordsB
+        }
+        \new Staff {
+          \clef treble
+          \GreensleevesNotesB
+        }
+        \new TabStaff {
+          \set Staff.stringTunings = #mandolin-tuning
+          \GreensleevesNotesB
+        }
+      >>
+    } % score
+  } % book part
+
 
 } % book
 
