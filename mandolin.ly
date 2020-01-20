@@ -5,6 +5,7 @@
 \include "devils-dream.ly"
 \include "soldiers-joy.ly"
 \include "greensleeves.ly"
+\include "abdul-abulbul-amir.ly"
 
 
 #(set-default-paper-size "a5" 'landscape)
@@ -311,6 +312,58 @@ system-system-spacing =
     } % score
   } % book part
 
+  \bookpart {
+    \header {
+      title = "Abdul Abulbul Amir"
+    } 
+    \score {
+      \header {
+        piece = ""
+        opus = \AbdulAbulbulAmirKey
+      }
+      <<
+        \new FretBoards {
+          \set Staff.stringTunings = #mandolin-tuning
+          \AbdulAbulbulAmirChordDictionary
+        }
+        \new ChordNames {
+          \set noChordSymbol = ""
+          \AbdulAbulbulAmirChords
+        }
+        \new Staff {
+          \clef treble
+          \AbdulAbulbulAmirNotes
+        }
+        \new TabStaff {
+          \set Staff.stringTunings = #mandolin-tuning
+          \AbdulAbulbulAmirNotes
+        }
+      >>
+    } % score
+%     \score {
+%       \header {
+%         piece = "Cont'd"
+%       }
+%       <<
+%         \new FretBoards {
+%           \set Staff.stringTunings = #mandolin-tuning
+%           \GreensleevesChordDictionaryB
+%         }
+%         \new ChordNames {
+%           \set noChordSymbol = ""
+%           \GreensleevesChordsB
+%         }
+%         \new Staff {
+%           \clef treble
+%           \GreensleevesNotesB
+%         }
+%         \new TabStaff {
+%           \set Staff.stringTunings = #mandolin-tuning
+%           \GreensleevesNotesB
+%         }
+%       >>
+%     } % score
+  } % book part
 
 } % book
 
